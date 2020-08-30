@@ -1,4 +1,3 @@
-package Algorithm_Problems.Kakao;
 
 import java.util.LinkedList;
 import java.util.Queue;

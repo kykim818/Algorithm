@@ -1,5 +1,3 @@
-package Algorithm_Problems.Kakao;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -29,7 +27,6 @@ public class kakao_2018_blind_shuttleBus {
 
 		@Override
 		public int compareTo(Time o) {
-			// TODO Auto-generated method stub
 			if (this.hour < o.hour) {
 				return -1;
 			} else if (this.hour > o.hour) {
