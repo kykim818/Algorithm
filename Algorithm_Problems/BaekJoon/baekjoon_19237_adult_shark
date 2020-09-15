@@ -2,7 +2,6 @@ import java.util.*;
 
 public class baekjoon_19237_adult_shark {
 	static int[][][] map; // 3차원 냄새 기록
-	static int[][] fake; // 올기기전 맵
 	static int[][][] ds; // 상어별 번호 별 현재 방향별 방향 우선순위
 	static int N,M,K;
 	static int[] dr= {0,-1,1,0,0};
@@ -32,7 +31,6 @@ public class baekjoon_19237_adult_shark {
 				int a = sc.nextInt();
 				if(a != 0) {
 					map[i][j][0] = a;
-					fake[i][j] = a;
 					map[i][j][2] = a; // 들어올때 냄새도 같이 기록
 					map[i][j][3] = K;
 					pos.add(new Shark(a,i,j));
@@ -103,108 +101,124 @@ public class baekjoon_19237_adult_shark {
 				// 냄새는 k번 이동뒤에 사라진다
 		int time = 0;
 		while(q.size() > 1) {
+//			if(time == 4) {
+//				System.out.println("시작");
+//			}
 			if(time > 1000)
 				return -1;
 			//현재 살아있는 상어체크 
-			System.out.println("물고기");
-			for(int i = 0; i< N; i++) {
-				for(int j = 0; j< N; j++) {
-					System.out.print(map[i][j][0]+" ");
-				}
-				System.out.println();
-			}
-			System.out.println("방향");
-			for(int i = 0; i< N; i++) {
-				for(int j = 0; j< N; j++) {
-					System.out.print(map[i][j][1]+" ");
-				}
-				System.out.println();
-			}
-			System.out.println("가스정보");
-			for(int i = 0; i< N; i++) {
-				for(int j = 0; j< N; j++) {
-					System.out.print(map[i][j][2]+" ");
-				}
-				System.out.println();
-			}
-			System.out.println("가스시간");
-			for(int i = 0; i< N; i++) {
-				for(int j = 0; j< N; j++) {
-					System.out.print(map[i][j][3]+" ");
-				}
-				System.out.println();
-			}
+//			System.out.println("물고기");
+//			for(int i = 0; i< N; i++) {
+//				for(int j = 0; j< N; j++) {
+//					System.out.print(map[i][j][0]+" ");
+//				}
+//				System.out.println();
+//			}
+//			System.out.println("방향");
+//			for(int i = 0; i< N; i++) {
+//				for(int j = 0; j< N; j++) {
+//					System.out.print(map[i][j][1]+" ");
+//				}
+//				System.out.println();
+//			}
+//			System.out.println("가스정보");
+//			for(int i = 0; i< N; i++) {
+//				for(int j = 0; j< N; j++) {
+//					System.out.print(map[i][j][2]+" ");
+//				}
+//				System.out.println();
+//			}
+//			System.out.println("가스시간");
+//			for(int i = 0; i< N; i++) {
+//				for(int j = 0; j< N; j++) {
+//					System.out.print(map[i][j][3]+" ");
+//				}
+//				System.out.println();
+//			}
 			
 			int size = q.size();
 			// 동시에 움직이므로
-			L:for(int i = 0; i< size;i++) {
+			for(int i = 0; i< size;i++) {
 				Shark s = q.poll(); // 상어를 빼낸다.
 				int row = s.row;
 				int col = s.col;
 				int num = s.num;
 				int dir = map[row][col][1];
+				boolean check = false;
 				for(int k= 1; k<= 4; k++) {
-					int mr = row +dr[ds[num][dir][k]];
-					int mc = col +dc[ds[num][dir][k]];
+					int mr = s.row +dr[ds[num][dir][k]];
+					int mc = s.col +dc[ds[num][dir][k]];
 					if(isIn(mr,mc)) {// 경계체크 
 						// 빈칸 체크 
-						if(map[mr][mc][3] == 0) // 일단 빈칸 탐색이기때문에 남은시간 정보를 확인
+						if(map[mr][mc][3] == 0 && map[mr][mc][0] == 0) // 일단 빈칸 탐색이기때문에 남은시간 정보를 확인
 						{
-							if(map[mr][mc][0] == 0 ||(map[mr][mc][0] != 0 && map[mr][mc][0] > num)){
-								q.add(new Shark(num, mr, mc));
-								map[mr][mc][0] = num;
-								map[row][col][0] = 0;
-								map[row][col][1] = 0;
-								map[mr][mc][1] = ds[num][dir][k];
-								map[mr][mc][3] = K+1;
-								map[mr][mc][2] = num;
-								continue L;
-							}else {
-								map[row][col][0] = 0;
-								continue L;
-							}
-						}else {
-							if(map[mr][mc][0] > num) {
-								q.add(new Shark(num, mr, mc));
-								map[mr][mc][0] = num;
-								map[row][col][0] = 0;
-								map[row][col][1] = 0;
-								map[mr][mc][1] = ds[num][dir][k];
-								map[mr][mc][3] = K+1;
-								map[mr][mc][2] = num;
-								continue L;
+							//가스가 없는 칸이면
+							map[s.row][col][0] = 0;
+							map[s.row][col][1] = 0;
+							map[mr][mc][0] = num;
+							map[mr][mc][1] = ds[num][dir][k];
+							check = true;
+							break;
+							//가스는 최종확정후에 넣자 
+						}else { // 빈칸이었는데 큐에서 나오는순서때문에 먼저이동한 물고기가 있을 수있음
+							if(map[mr][mc][2] == 0) { // 원래 빈곳이었네 
+								//물고기 서열 확인
+								if(map[mr][mc][0] > num) {
+									// 내가 더높네?  -> 덮어씌우기
+									map[s.row][col][0] = 0;
+									map[s.row][col][1] = 0;
+									map[mr][mc][0] = num;
+									map[mr][mc][1] = ds[num][dir][k];
+									check = true;
+									break;
+								}else{
+									map[s.row][col][0] = 0;
+									map[s.row][col][1] = 0;
+									check = true;
+									break;
+								}
 							}
 						}
 						//map[][][] 0은 상어들 1은 현재 방향 2 냄새정보 3 남은시간	
 						// 빈칸이 여러개아니면 무조건 자기가 온방향으로 가게 되어있음 
 					}
 //					ds[][][] //행이 상어번호 뒤가 우선순휘 0~3까지
+				} // 빈칸이없었을 경우
+				if(!check) {
+					for(int k= 1; k<= 4; k++) {
+						int mr = s.row +dr[ds[num][dir][k]];
+						int mc = s.col +dc[ds[num][dir][k]];
+						if(isIn(mr,mc)) {// 경계체크 
+							// 빈칸 체크 
+							if(map[mr][mc][2] == num) // 일단 빈칸 탐색이기때문에 남은시간 정보를 확인
+							{
+								q.add(new Shark(num,mr,mc));
+								map[s.row][col][0] = 0;
+								map[s.row][col][1] = 0;
+								map[mr][mc][3] = K+1;
+								map[mr][mc][0] = num;
+								map[mr][mc][1] = ds[num][dir][k];
+								break;
+							}
+							//map[][][] 0은 상어들 1은 현재 방향 2 냄새정보 3 남은시간	
+							// 빈칸이 여러개아니면 무조건 자기가 온방향으로 가게 되어있음 
+						}
+	//					ds[][][] //행이 상어번호 뒤가 우선순휘 0~3까지
+					}
 				}
-				for(int k= 1; k<= 4; k++) {
-					int mr = row +dr[ds[num][dir][k]];
-					int mc = col +dc[ds[num][dir][k]];
-					if(isIn(mr,mc)) {// 경계체크 
-						// 빈칸 체크 
-						if(map[mr][mc][3] == num) // 일단 빈칸 탐색이기때문에 남은시간 정보를 확인
-						{
-							if(map[mr][mc][0] == 0 ||(map[mr][mc][0] != 0 && map[mr][mc][0] > num)){
-								q.add(new Shark(num, mr, mc));
-								map[mr][mc][0] = num;
-								map[row][col][0] = 0;
-								map[row][col][1] = 0;
-								map[mr][mc][1] = ds[num][dir][k];
-								map[mr][mc][3] = K+1;
-								map[mr][mc][2] = num;
-								continue L;
-							}else {
-								map[row][col][0] = 0;
-								continue L;
+				//
+				if(i == size-1) {
+					for(int p = 0; p< N; p++) {
+						for(int r = 0; r< N; r++) {
+							if(map[p][r][0] != 0) {
+								if(map[p][r][2] == 0) {
+									q.add(new Shark(map[p][r][0], p, r));
+									map[p][r][2] = map[p][r][0];
+									map[p][r][3] = K+1;
+								}
 							}
 						}
-						//map[][][] 0은 상어들 1은 현재 방향 2 냄새정보 3 남은시간	
-						// 빈칸이 여러개아니면 무조건 자기가 온방향으로 가게 되어있음 
 					}
-//					ds[][][] //행이 상어번호 뒤가 우선순휘 0~3까지
 				}
 			}
 			// 이동후에 냄새처리를 해야함 
