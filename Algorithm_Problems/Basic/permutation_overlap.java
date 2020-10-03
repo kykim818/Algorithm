@@ -15,11 +15,15 @@ public class permutation_overlap {
 	private static void permutation_overlap(int[] arr, int[] res, int res_idx, int length) {
 		// TODO Auto-generated method stub
 		if(res_idx == 3) {
+			// 개수를 전부 뽑으면 출력 0 1 2이므로 3일때가 다뽑은것 
 			System.out.println(Arrays.toString(res));
 			cnt++;
+			return;
 		}
 		for(int i = 0; i< arr.length; i++) {
-			permutation_overlap(arr, res, res_idx, length);
+			//중복이가능하므로 따로 썻는지 않썻는지를 체크할 필요가 없음
+			res[res_idx] = arr[i];
+			permutation_overlap(arr, res, res_idx+1, length);
 		}
 	}
 
