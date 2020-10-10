@@ -23,5 +23,8 @@ public class time_gap {
 		endTime = f.format(cal.getTime());
 		System.out.println(endTime);
 	}
+	// 방문한 손님 빈순선대로 기계배정
+	// 다차있으면 대기시간이 제일 길은 기계한테 배정
+	// 대기시간이 동일하다면 낮은번호의 기계 
 
 }
