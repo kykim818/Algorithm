@@ -7,7 +7,7 @@ public class kakao_blind_2020_lock_and_key {
 		int[][] key = {{0, 0, 0}, {1, 0, 0}, {0, 1, 1}};
 		int[][] lock = {{1, 1, 1}, {1, 1, 0}, {1, 0, 1}};
 		boolean answer = false;
-		
+		// 수정
 		// idea : 완탐  
 		// M이 최대가 N이랑 같을때 
 		
