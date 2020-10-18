@@ -6,6 +6,7 @@ import java.util.Set;
  * https://programmers.co.kr/learn/courses/30/lessons/43163
  * 단어변환
  * 비효율, 수정해야함 
+ * 1
  */
 public class programmers_word_transformation {
 	static int answer;
