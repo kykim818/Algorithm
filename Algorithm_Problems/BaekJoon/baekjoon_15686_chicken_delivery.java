@@ -1,7 +1,12 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
-
+/**
+ * @author kykim818@naver.com
+ * 실수한 부분 : 비용계산을 할 때,집이 아닌 치킨집도 계산에 포함시켜버림
+ * 그 후에 최소비용 계산할 과정에서도 치킨집을 포함함   
+ * https://www.acmicpc.net/problem/15686
+ */
 public class baekjoon_15686_chicken_delivery {
 	static int N,M,answer;
 	static int[][][] map;
