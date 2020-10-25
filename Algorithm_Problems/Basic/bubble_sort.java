@@ -1,14 +1,15 @@
 import java.util.Arrays;
+/**
+ * 버블 정렬
+ * @author kykim818@naver.com
+ * 구현이 매우 간단한 정렬 기법 
+ * 다만 매번 SWAP을 하는데 교환방식이 이동작업보다 복잡하여 잘 사용되지 않는다.
+ * Point ! 한번 순환시마다 맨 마지막에 가장 큰수가 오게 된다.
+ *
+ */
 
 public class bubble_sort {
-	/**
-	 * 
-	 * 버블 정렬
-	 * @param kykim818@naver.com
-	 * 구현이 매우 간단한 정렬 기법 
-	 * 다만 매번 SWAP을 하는데 교환방식이 이동작업보다 복잡하여 잘 사용되지 않는다.
-	 * Point ! 한번 순환시마다 맨 마지막에 가장 큰수가 오게 된다.
-	 */
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] arr = {4,5,2,1,6,3};
@@ -29,3 +30,4 @@ public class bubble_sort {
 		}
 	}
 }
+
