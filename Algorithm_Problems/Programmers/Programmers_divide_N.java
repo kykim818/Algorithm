@@ -1,6 +1,6 @@
 
 public class programmers_divde_N {
-
+	// 잘못된풀이
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int N = 5;
