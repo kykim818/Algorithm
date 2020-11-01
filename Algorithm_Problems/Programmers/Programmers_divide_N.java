@@ -53,3 +53,4 @@ public class programmers_divde_N {
 	}
 
 }
+// DP로 푸는 벙법도 찾아야 할듯
