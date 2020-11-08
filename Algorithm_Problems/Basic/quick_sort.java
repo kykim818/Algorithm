@@ -19,4 +19,19 @@ public class quick_sort {
 		
 	}
 
+	private static int partition(int[] arr, int low, int high) {
+		// TODO Auto-generated method stub
+		int pivot = arr[(low+high)/2];
+		while(low <= high) {
+			while(arr[low] < pivot) low++;
+			while(arr[high] > pivot) high--;
+			
+			if(low <= high) {
+				int tmp = arr[low];
+				arr[low] = arr[high];
+				arr[high] = tmp;
+			}
+		}
+		return high;
+	}
 }
