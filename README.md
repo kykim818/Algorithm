@@ -31,4 +31,4 @@
 - 선택정렬(완료) - selection sort
 - 버블정렬(완료) - bubblie sort
 - 삽입정렬(완료) - insertion sort
-- 퀵정렬(진행) - quick sort
+- 퀵정렬(진행) - quick sort - partition부분이 어려움
