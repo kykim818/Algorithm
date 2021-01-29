@@ -30,7 +30,8 @@ public class baekjoon_1002 {
                 if(len == (r1+r2)){
                     sb.append("1").append("\n");
                 }else if(len < r1 + r2){
-                    if(len == r1 || len == r2){
+                    //if(len == r1 || len == r2){
+                    if(len == Math.abs(r1-r2)){
                         sb.append("1").append("\n");
                     }else if(len < Math.abs(r1-r2)){
                         sb.append("0").append("\n");
