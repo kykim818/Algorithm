@@ -11,7 +11,6 @@ import java.util.Arrays;
 public class bubble_sort {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		int[] arr = {4,5,2,1,6,3};
 		bubblesort(arr);
 		System.out.println(Arrays.toString(arr));
@@ -20,7 +19,8 @@ public class bubble_sort {
 	private static void bubblesort(int[] arr) {
 		//  n번의 회전을 한다.
 		for(int i = 0; i < arr.length-1; i++) {
-			for(int j = 0; j < arr.length-1; j++) {
+			for(int j = 0; j < arr.length-i-1; j++) { 
+				// 1번의 회전마다 마지막칸은 정렬이 된애가오므로 매회전마다 비교할 칸이 1칸씩 줄어든다.
 				if(arr[j] > arr[j+1]) {
 					int tmp = arr[j];
 					arr[j] = arr[j+1];
