@@ -1,0 +1,581 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch baekjoon_2667",
+            "request": "launch",
+            "mainClass": "baekjoon_2667",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch kakao_2018_blind_sorting_filename",
+            "request": "launch",
+            "mainClass": "kakao_2018_blind_sorting_filename",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_11650",
+            "request": "launch",
+            "mainClass": "baekjoon_11650",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch A_divide_B",
+            "request": "launch",
+            "mainClass": "A_divide_B",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch A_fundamental_B",
+            "request": "launch",
+            "mainClass": "A_fundamental_B",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch A_minus_B",
+            "request": "launch",
+            "mainClass": "A_minus_B",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch A_multiply_B",
+            "request": "launch",
+            "mainClass": "A_multiply_B",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch A_plus_B",
+            "request": "launch",
+            "mainClass": "A_plus_B",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch A_plus_B_3",
+            "request": "launch",
+            "mainClass": "A_plus_B_3",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch A_plus_B_7",
+            "request": "launch",
+            "mainClass": "A_plus_B_7",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch A_plus_B_8",
+            "request": "launch",
+            "mainClass": "A_plus_B_8",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch alarm_clock",
+            "request": "launch",
+            "mainClass": "alarm_clock",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_1002",
+            "request": "launch",
+            "mainClass": "baekjoon_1002",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_1011",
+            "request": "launch",
+            "mainClass": "baekjoon_1011",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_1018",
+            "request": "launch",
+            "mainClass": "baekjoon_1018",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_10250",
+            "request": "launch",
+            "mainClass": "baekjoon_10250",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_1065",
+            "request": "launch",
+            "mainClass": "baekjoon_1065",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_10757",
+            "request": "launch",
+            "mainClass": "baekjoon_10757",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_10809",
+            "request": "launch",
+            "mainClass": "baekjoon_10809",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_10818",
+            "request": "launch",
+            "mainClass": "baekjoon_10818",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_1085",
+            "request": "launch",
+            "mainClass": "baekjoon_1085",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_10870",
+            "request": "launch",
+            "mainClass": "baekjoon_10870",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_10872",
+            "request": "launch",
+            "mainClass": "baekjoon_10872",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_10951",
+            "request": "launch",
+            "mainClass": "baekjoon_10951",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_10952",
+            "request": "launch",
+            "mainClass": "baekjoon_10952",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_10989",
+            "request": "launch",
+            "mainClass": "baekjoon_10989",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_1110",
+            "request": "launch",
+            "mainClass": "baekjoon_1110",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_1152",
+            "request": "launch",
+            "mainClass": "baekjoon_1152",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_1157",
+            "request": "launch",
+            "mainClass": "baekjoon_1157",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_11653",
+            "request": "launch",
+            "mainClass": "baekjoon_11653",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_11654",
+            "request": "launch",
+            "mainClass": "baekjoon_11654",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_11720",
+            "request": "launch",
+            "mainClass": "baekjoon_11720",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_11729",
+            "request": "launch",
+            "mainClass": "baekjoon_11729",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_1193",
+            "request": "launch",
+            "mainClass": "baekjoon_1193",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_1316",
+            "request": "launch",
+            "mainClass": "baekjoon_1316",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_1436",
+            "request": "launch",
+            "mainClass": "baekjoon_1436",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_1546",
+            "request": "launch",
+            "mainClass": "baekjoon_1546",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_15596",
+            "request": "launch",
+            "mainClass": "baekjoon_15596",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_1712",
+            "request": "launch",
+            "mainClass": "baekjoon_1712",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_1978",
+            "request": "launch",
+            "mainClass": "baekjoon_1978",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_2231",
+            "request": "launch",
+            "mainClass": "baekjoon_2231",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_2292",
+            "request": "launch",
+            "mainClass": "baekjoon_2292",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_2447",
+            "request": "launch",
+            "mainClass": "baekjoon_2447",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_2562",
+            "request": "launch",
+            "mainClass": "baekjoon_2562",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_2577",
+            "request": "launch",
+            "mainClass": "baekjoon_2577",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_2581",
+            "request": "launch",
+            "mainClass": "baekjoon_2581",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_2675",
+            "request": "launch",
+            "mainClass": "baekjoon_2675",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_2750",
+            "request": "launch",
+            "mainClass": "baekjoon_2750",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_2751",
+            "request": "launch",
+            "mainClass": "baekjoon_2751",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_2775",
+            "request": "launch",
+            "mainClass": "baekjoon_2775",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_2798",
+            "request": "launch",
+            "mainClass": "baekjoon_2798",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_2839",
+            "request": "launch",
+            "mainClass": "baekjoon_2839",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_2869",
+            "request": "launch",
+            "mainClass": "baekjoon_2869",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_2941",
+            "request": "launch",
+            "mainClass": "baekjoon_2941",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_3009",
+            "request": "launch",
+            "mainClass": "baekjoon_3009",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_3053",
+            "request": "launch",
+            "mainClass": "baekjoon_3053",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_4153",
+            "request": "launch",
+            "mainClass": "baekjoon_4153",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_4344",
+            "request": "launch",
+            "mainClass": "baekjoon_4344",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_4673",
+            "request": "launch",
+            "mainClass": "baekjoon_4673",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_4948",
+            "request": "launch",
+            "mainClass": "baekjoon_4948",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_5622",
+            "request": "launch",
+            "mainClass": "baekjoon_5622",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_7568",
+            "request": "launch",
+            "mainClass": "baekjoon_7568",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_8958",
+            "request": "launch",
+            "mainClass": "baekjoon_8958",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_9020",
+            "request": "launch",
+            "mainClass": "baekjoon_9020",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch cat",
+            "request": "launch",
+            "mainClass": "cat",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch compare_two",
+            "request": "launch",
+            "mainClass": "compare_two",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch dog",
+            "request": "launch",
+            "mainClass": "dog",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch fast_A_plus_B",
+            "request": "launch",
+            "mainClass": "fast_A_plus_B",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch gugudan",
+            "request": "launch",
+            "mainClass": "gugudan",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch multiply",
+            "request": "launch",
+            "mainClass": "multiply",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch number_smaller_than_X",
+            "request": "launch",
+            "mainClass": "number_smaller_than_X",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch print_N",
+            "request": "launch",
+            "mainClass": "print_N",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch print_N_reverse",
+            "request": "launch",
+            "mainClass": "print_N_reverse",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch print_star",
+            "request": "launch",
+            "mainClass": "print_star",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch print_star_2",
+            "request": "launch",
+            "mainClass": "print_star_2",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch select_quadrant",
+            "request": "launch",
+            "mainClass": "select_quadrant",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch sum",
+            "request": "launch",
+            "mainClass": "sum",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch test1",
+            "request": "launch",
+            "mainClass": "test1",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch test_score",
+            "request": "launch",
+            "mainClass": "test_score",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch the_rest",
+            "request": "launch",
+            "mainClass": "the_rest",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch yun_year",
+            "request": "launch",
+            "mainClass": "yun_year",
+            "projectName": "Algorithm_af589ccd"
+        }
+    ]
+}
