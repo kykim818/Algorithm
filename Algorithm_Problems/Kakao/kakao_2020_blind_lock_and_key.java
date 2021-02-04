@@ -1,10 +1,8 @@
-import java.util.Arrays;
 
-public class kakao_blind_2020_lock_and_key {
+public class kakao_2020_blind_lock_and_key {
 	static int n,m;
 	static boolean check;
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		int[][] key = {{0, 0, 0}, {1, 0, 0}, {0, 1, 1}};
 		int[][] lock = {{1, 1, 1}, {1, 1, 0}, {1, 0, 1}};
 		boolean answer = false;

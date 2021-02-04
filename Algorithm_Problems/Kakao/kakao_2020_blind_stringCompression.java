@@ -1,10 +1,9 @@
-import java.util.*;
 /*
 * 더 빠르게 구할수 있는 방법에 대해서 생각해볼 필요가 있다.
 * IF분기문을 이렇게 지속적으로 사용을 해도되는가에 대해서 생각해볼 필요성
 * 자료구조를 통하거나 , 문자열 관련함수를 통해 해결할수 있는가
 */
-public class kakao_2020_blind_StringCompression {
+public class kakao_2020_blind_stringCompression {
 
 	public static void main(String[] args) {
 		

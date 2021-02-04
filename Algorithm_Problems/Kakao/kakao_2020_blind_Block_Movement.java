@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class kakao_blind_2020_Block_Movement {
+public class kakao_2020_blind_Block_Movement {
 	static int N;
 	static class Robot{
 		int row,col; // 기준점 

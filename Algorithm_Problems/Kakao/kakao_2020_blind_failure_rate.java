@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class kakao_blind_2020_failure_rate{
+public class kakao_2020_blind_failure_rate{
 			// TODO Auto-generated method stub
 		    static class rate implements Comparable<rate>{
 				int stage;
