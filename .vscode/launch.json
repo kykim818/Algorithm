@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch baekjoon_10814",
+            "request": "launch",
+            "mainClass": "baekjoon_10814",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_1181",
+            "request": "launch",
+            "mainClass": "baekjoon_1181",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_11651",
+            "request": "launch",
+            "mainClass": "baekjoon_11651",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_1427",
+            "request": "launch",
+            "mainClass": "baekjoon_1427",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
+            "name": "Launch baekjoon_2108",
+            "request": "launch",
+            "mainClass": "baekjoon_2108",
+            "projectName": "Algorithm_af589ccd"
+        },
+        {
+            "type": "java",
             "name": "Launch line_test_3",
             "request": "launch",
             "mainClass": "line_test_3",
