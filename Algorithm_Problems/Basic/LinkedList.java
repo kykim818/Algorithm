@@ -22,9 +22,15 @@ public class LinkedList{
         public String getData(){
             return this.data;
         }
-        // 1 
+        // 1 addNode
+        public void addNode(String data){
+            NodeList head = this;
+            
+        }
     }
     public static void main(String[] args) {
         
+        NodeList list = new NodeList("mon");
+        System.out.println(list.getData());
     }
 }
