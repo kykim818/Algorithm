@@ -1,4 +1,3 @@
-import java.util.*;
 import java.io.*;
 
 
@@ -12,7 +11,7 @@ public class baekjoon_1904 {
         memo[1] = 1; // 1
         memo[2] = 2; // 00 11
         for(int i = 3; i <= N; i++){
-            memo[i] = memo[i-1] + (2 * memo[i-2]);
+            memo[i] = (memo[i-1] + memo[i-2]) % mod;
         }
         System.out.println(memo[N]);        
 
